@@ -1,0 +1,112 @@
+
+.commingtalk {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+  height: 95vh;
+}
+
+.obaasanimg {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 50vh;
+}
+
+.obaasanimg > img {
+  height: 50%;
+  object-fit: contain;
+}
+
+.medalDisplay {
+  display: flex;
+  flex-direction: column;
+}
+
+.medal {
+  font-size: 24px;
+}
+
+.medalnum {
+  font-size: 40px;
+  position: relative;
+
+}
+
+.talkbox {
+  flex-grow: 2;
+  height: auto;
+  /* border: 1px solid pink; */
+  font-size: 40px;
+}
+
+.textdisplay {
+  background-color: FFFFFF;
+  /* border: 1px solid red; */
+  height: 50%;
+  padding: 5% 5% 5% 5%;
+  
+}
+.textdisplay h2 {
+  z-index: 1000;
+  position:relative;
+  top:-130%;
+}
+
+.talkimg {
+  /* border: 1px solid red; */
+  position: relative;
+  top: -8vh;
+  left: -60px;
+
+  z-index: 50;
+}
+.talkimg > img {
+  position: relative;
+  z-index: 1;
+  width: 115%;
+  height: 270px;
+  transform: scale(-1,1);
+  
+}
+
+.medalbuttonbox {
+  /* background-color: #ffffff; */
+  /* border: 1px solid green; */
+  height: 40vh;
+  margin: 0 5%;
+  position: relative;
+  bottom: -5vh;
+  /* z-index: 60; */
+}
+
+.medleDisplay {
+  display: flex;
+  justify-content: space-around;
+}
+
+.medalbtn {
+  display: flex;
+  justify-content:flex-start;
+}
+
+.coinbtn {
+  width: 18vh;
+  height: 8vh;
+  border-radius: 15%;
+  border: none;
+  background-color: none;
+  cursor: pointer; /* マウスカーソルが人差し指の形に変更 */
+  padding: 0;
+  margin: 3vh;
+
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+  .coinbtn:hover {
+    background-color: #0066CC;
+    color: white;
+  }

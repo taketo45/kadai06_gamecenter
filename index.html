@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameCenter</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+  <header>
+    <section class="headererea">
+      <a id="headerlogo">
+        <img src="assets/img/gasen.png" alt="ヘッダーロゴ">
+      </a>
+      <div class="headerright">
+        <!-- <div class="midleDisplay">
+          <div class="medal" id="medalTitle1">手元メダル数：</div>
+          <div class="medalnum" id="medalnum">0</div>
+        </div>
+        <div class="midleDisplay">
+          <div class="medal" id="medalTitle2">
+            預け入れメダル数：
+          </div>
+          <div class="medalnum" id="cookiemedalnum">0</div>
+        </div> -->
+      </div>
+    </section>
+</header>
+<main>
+  <section id="sidebar">
+    <div><a href="#counter" class="game-link">玄関</a></div>
+    <div><a href="#janken" class="game-link">じゃんけんゲーム</a></div>
+    <div><a href="#numberslide" class="game-link">ナンバースライドゲーム</a></div>
+    <div><a href="#supermaruo" class="game-link">すーぱーまるお</a></div>
+    <div><a href="#hyperjanken" class="game-link">ハイパーじゃんけん(改修中ークラス設計板)
+    </a></div>
+    <!-- <div><a href="#contact" class="game-link">駄菓子屋から出る</a></div> -->
+  </section>
+
+  <section id="gameerea">
+    <iframe id="counter" src="01_counter.html" frameborder="0"></iframe>
+
+    <iframe id="janken" src="02_janken.html" frameborder="0"></iframe>
+
+    <iframe id="numberslide" src="03_numberslide.html" frameborder="0"></iframe>
+
+    <iframe id="supermaruo" src="04_supermaruo.html" frameborder="0"></iframe>
+    
+    <iframe id="hyperjanken" src="05_hyperjanken.html" frameborder="0"></iframe>
+
+    <!-- <iframe id="contact" src="09_contact.html" frameborder="0"></iframe> -->
+    
+  </section>
+
+</main>
+<footer>
+  <section id="exit">
+
+    <div class="company">
+      © 駄菓子屋げーせんカンパニー
+    </div>
+  </section>
+</footer>
+  
+
+<script src="js/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/sidebar.js"></script>
+</body>
+</html>

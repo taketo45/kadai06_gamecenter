@@ -1,0 +1,276 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    /* background-image: url(../img/raining-money-12.gif); */
+    background-color: #f0e68c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainarea {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.insertCoin {
+    background-color: #fff;
+}
+
+
+.coin {
+    display: flex;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+
+main{
+    border-bottom:1px solid #ccc;
+}
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    /* font-size:200%; */
+    text-align: center;
+    /* border-bottom:1px solid #fff; */
+    /* height:200px; */
+}
+ul{
+    padding: 0;
+    /* border-top: 1px solid #000000; */
+    display:flex;  /* 定義 */
+    justify-content: space-around;
+    table-layout: fixed;
+    width:100%;
+}
+li{
+    text-align: center;
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #c3f2ff;
+    display: flex;  
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#janken li:nth-child(1) {
+    border: none;
+    background-color: none;
+}
+
+/* li:hover{
+    background: #0066CC;
+    color:#fff;
+} */
+
+/* .gamebutton {
+    display: flex;
+    justify-content: center;
+  } */
+
+.multidisplay {
+    /* border-top: 1px solid #000000; */
+    padding: 20px;
+    height: 100px;
+    display:flex;  /* 定義 */
+    justify-content: space-around;
+    table-layout: fixed;
+    width:100%;
+}
+.multi {
+    margin-top: 10px;
+    padding: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    list-style-type:none;
+    border: 2px solid #c8412d;
+    /* border: 2px solid #c8412d; */
+    /* background-color: #f98fab; */
+    background-color: #ffcaca;
+    display: flex;  
+    cursor: default;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+
+  .game-btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background-color: none;
+    cursor: pointer; /* マウスカーソルが人差し指の形に変更 */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* .game-btn:hover {
+    background-color: #0066CC;
+  } */
+  
+  .game-btn img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  /* スタートボタンのサイズを調整（必要に応じて） */
+  #start_btn {
+    width: 80px;
+    height: 80px;
+  }
+
+
+.result {
+    height: 75px;
+    /* border: 1px solid red; */
+}
+
+#judgment {
+    text-align: center;
+    height: 70px;
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    padding: 0;
+    color: #8b4513;
+    background-color: #fff;
+}
+
+/* #start_btn img:hover {
+        width: 95px;
+} */
+
+#junkenDisplay {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    /* background-color: rgb(191, 188, 188); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.coinDisplay {
+    display: flex;
+    justify-content: space-around;
+}
+
+.midleDisplay {
+    display: flex;
+    justify-content: space-around;
+}
+
+.keybind {
+    display: flex;
+    justify-content: space-around;
+}
+
+.toggleerea {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.switchtitle {
+    color: red;
+}
+ /* === ボタンを表示するエリア ============================== */
+ .switchArea {
+    line-height    : 60px;                /* 1行の高さ          */
+    letter-spacing : 0;                   /* 文字間             */
+    text-align     : center;              /* 文字位置は中央     */
+    font-size      : 27px;                /* 文字サイズ         */
+  
+    position       : relative;            /* 親要素が基点       */
+    margin         : 0;                /* 中央寄せ           */
+    width          : 150px;               /* ボタンの横幅       */
+    background     : #fff;                /* デフォルト背景色   */
+    border-radius: 30%;
+  }
+  
+   /* === チェックボックス ==================================== */
+  .switchArea input[type="checkbox"] {
+    display        : none;            /* チェックボックス非表示 */
+  }
+  
+   /* === チェックボックスのラベル（標準） ==================== */
+  .switchArea label {
+    display        : block;               /* ボックス要素に変更 */
+    box-sizing     : border-box;          /* 枠線を含んだサイズ */
+    height         : 60px;                /* ボタンの高さ       */
+    border         : 2px solid #999999;   /* 未選択タブのの枠線 */
+    border-radius  : 30px;                /* 角丸               */
+  }
+  
+   /* === チェックボックスのラベル（ONのとき） ================ */
+  .switchArea input[type="checkbox"]:checked +label {
+    border-color   : #78bd78;             /* 選択タブの枠線     */
+  }
+  
+   /* === 表示する文字（標準） ================================ */
+  .switchArea label span:after{
+    content        : "OFF";               /* 表示する文字       */
+    padding        : 0 0 0 36px;          /* 表示する位置       */
+    color          : #999999;             /* 文字色             */
+  }
+  
+   /* === 表示する文字（ONのとき） ============================ */
+  .switchArea  input[type="checkbox"]:checked + label span:after{
+    content        : "ON";                /* 表示する文字       */
+    padding        : 0 36px 0 0;          /* 表示する位置       */
+    color          : #78bd78;             /* 文字色             */
+  }
+  
+   /* === 丸部分のSTYLE（標準） =============================== */
+  .switchArea #swImg {
+    position       : absolute;            /* 親要素からの相対位置*/
+    width          : 52px;                /* 丸の横幅           */
+    height         : 52px;                /* 丸の高さ           */
+    background     : #999999;             /* カーソルタブの背景 */
+    top            : 4px;                 /* 親要素からの位置   */
+    left           : 4px;                 /* 親要素からの位置   */
+    border-radius  : 26px;                /* 角丸               */
+    transition     : .2s;                 /* 滑らか変化         */
+  }
+  
+   /* === 丸部分のSTYLE（ONのとき） =========================== */
+  .switchArea input[type="checkbox"]:checked ~ #swImg {
+    transform      : translateX(90px);    /* 丸も右へ移動       */
+    background     : #78bd78;             /* カーソルタブの背景 */
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カウンター</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/01_counter.css">
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>
+    <h1>カウンター</h1>
+    <section class="commingtalk">
+      <div class="obaasanimg">
+        <img src="assets/img/obaasan_agura.png" alt="あぐらのおばあさんイメージ">
+        <div class="midleDisplay">
+          <div class="medal" id="medalTitle">手元メダル数：</div>
+          <div class="medalnum" id="medalnum">0</div>
+        </div>
+        <div class="midleDisplay">
+          <div class="medal" id="medalTitle">
+            <span>預け入れ</span><br>
+            <span>メダル数：</span>
+          </div>
+          <div class="medalnum" id="longmedalnum">0</div>
+        </div>
+      </div>
+      <div class="talkbox">
+        <div class="textdisplay">
+          <div class="talkimg">
+            <img src="assets/img/e1547_1.png" alt="吹き出し">
+          </div>
+          <h2 id="obacomment">いらっしゃい！メダルをもっているかい？</h2>
+        </div>
+        <div class="medalbuttonbox">
+          <div class="buymedal">
+            <div class="insert">
+              <div class="medal">メダルを購入する</div>
+              <button id="tenYenInsert" class="coinbtn">10円投入</button>
+              <button id="hundredYenInsert" class="coinbtn">100円投入</button>
+            </div>
+          </div>
+          <div class="withdrawmedal">
+            <div class="medal">メダルを預ける／受け取る</div>
+            <div class="medalbtn">
+              <button id="medalSet" class="coinbtn">メダルを預ける</button>
+              <button id="medalGet" class="coinbtn">メダルを受け取る</button>
+              <button id="medalClear" class="coinbtn">メダルを返却する</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    
+  </main>
+  <script src="js/jquery-3.7.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<!-- 授業での指定はHTMLへ直接記載するとのことだったが、コード数が大きくなったためjs/main.jsファイルへ分離  2024/10/19 -->
+<script src="js/01_counter.js"></script>
+</body>
+</html>

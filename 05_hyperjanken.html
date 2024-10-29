@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<!-- jqueryスクリプトはBodyタグの終了直前へ移動 -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/02_janken.css">
+
+
+<title>じゃんけん</title>
+</head>
+<body>
+  <audio src="assets/sound/junkenpon.m4a" id="junkenponSound" class="sound"></audio>
+  <audio src="assets/sound/win.m4a" id="winSound" class="sound"></audio>
+  <audio src="assets/sound/lose.m4a" id="loseSound" class="sound"></audio>
+  <audio src="assets/sound/even.mp4" id="evenSound" class="sound"></audio>
+
+<header>
+  <h1>じゃんけん</h1>
+</header>
+<main class="mainarea">
+  <section class="insertCoin">
+    <div class="midleDisplay">
+      <div class="insert">
+        <button id="tenYenInsert">10円投入</button>
+        <button id="hundredYenInsert">100円投入</button>
+      </div>
+      <div class="midleDisplay">
+        <div class="yenbtn" id="medalTitle">メダル数：</div>
+        <div class="yenbtn" id="medalnum"></div>
+      </div>
+      <div class="midleDisplay">
+        <button id="medalSet">メダルを持ち帰る</button>
+        <button id="medalGet">メダルを使う</button>
+      </div>
+    </div>
+  </section>
+  <section class="multierea">
+    <div class="multibox">
+      <ul id="multidisplay">
+        <li class="multi" id="multi02">2</li>
+        <li class="multi" id="multi04">4</li>
+        <li class="multi" id="multi08">8</li>
+        <li class="multi" id="multi16">16</li>
+        <li class="multi" id="multi32">32</li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="result">
+    <h2><div id="judgment"></div></h2> 
+  </section>
+
+  <p class="pccomment"></p>
+  <div id="junkenDisplay">
+    <div id="pc_hands"></div>
+  </div>
+
+  <section class="buttonerea">
+    <div class="gamebutton">
+      <ul id="janken">
+        <li><button id="start_btn" class="game-btn"><img src="assets/img/startbtn.jpeg" width="105" alt="スタート"></button></li>
+        <li><button id="gu_btn" class="game-btn"><img src="assets/img/gu.png" width="60" alt="グー"></button></li>
+        <li><button id="cho_btn" class="game-btn"><img src="assets/img/choki.png" width="60" alt="チョキ"></button></li>
+        <li><button id="par_btn" class="game-btn"><img src="assets/img/pa.png" width="60" alt="パー"></button></li>
+      </ul>
+    </div>
+    
+  </section>
+</main>
+
+<footer>
+  <div class="keybind">
+    <div class="startKey">[S]</div>
+    <div class="guKey">[G]</div>
+    <div class="chokiKey">[K]</div>
+    <div class="paKey">[P]</div>
+  </div>
+
+</footer>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<!-- 授業での指定はHTMLへ直接記載するとのことだったが、コード数が大きくなったためjs/main.jsファイルへ分離  2024/10/19 -->
+<!-- <script src="js/constants.js"></script>
+<script src="js/base-game.js"></script>
+<script src="js/ui-manager.js"></script>
+<script src="js/medal-manager.js"></script>
+<script src="js/cookie-manager.js"></script>
+<script src="js/janken-game.js"></script>
+<script src="js/05_main.js"></script> -->
+
+
+</body>
+</html>
